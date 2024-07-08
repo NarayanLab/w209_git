@@ -15,7 +15,8 @@ def api():
 @app.route("/test_sn/")
 def test():
     file = "REACT_summary.png"
-    return render_template("test_sn.html", file = file), 344
+    return render_template("test_sn.html", file = file), 200, {'header-a': 'b'} 
 
 if __name__ == "__main__":
     app.run()
+
